@@ -57,7 +57,7 @@ function getArrayOfCurrencys(dataApi) {
 
 async function buildCurrenciesDropdown() {
   let reply = await fetch(
-    "/data/currencies.json"
+    "data/currencies.json"
   );
 
   let data = await reply.json();
