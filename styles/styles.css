@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(37, 34, 61);
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.header-box {
+  display: flexbox;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.simple-container {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+
+  overflow-x: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+
+  white-space: nowrap;
+  height: auto;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.simple-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.simple-info {
+  border-radius: 16px;
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgb(51, 47, 79);
+  padding: 7px 12px;
+  color: white;
+  font-size: 85%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.footer-box {
+  flex-wrap: wrap;
+  display: grid;
+  width: 90%;
+  height: auto;
+  color: white;
+  place-items: center;
+  padding: 5%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.table-style {
+  width: 100%;
+}
+
+.footer-titles {
+  text-align: center;
+  color: rgb(190, 190, 190);
+  width: 100%;
+}
+
+.sides-container {
+  display: grid;
+  text-align: center;
+  grid-auto-flow: column;
+  width: 100%;
+  height: auto;
+}
+
+.text-holders {
+  color: gray;
+}
+
+.low-high-values {
+  color: white;
+}
+
+
+.title-box {
+  font-size: 170%;
+}
+
+.cotation-currency {
+  color: rgb(160, 160, 160);
+}
+
+select {
+  background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 0.5rem) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  padding-right: 1.8rem !important;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+select::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.dropdown-currency {
+  margin-left: -8px;
+  background-color: rgb(37, 34, 61);
+  outline: 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(184, 184, 184);
+  border-width: 0;
+}
+
+.dropdown-days {
+  outline: 0;
+  float: right;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(51, 47, 79);
+  color: white;
+  border-width: 0;
+  transform: translate(0, -50%);
+}
+
+.box {
+  width: auto;
+
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  height: auto;
+
+  padding: 3%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}

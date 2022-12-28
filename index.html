@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Cotation Historic</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="header-box">
+        <div class="title-box">Cotation Historic</div>
+
+        <select
+          name="days"
+          id="cotation-dropdown"
+          class="cotation-currency dropdown-currency"
+        ></select>
+
+        <select name="days" id="period-days" class="dropdown-days">
+          <option value="7">7 Days</option>
+          <option value="30">30 Days</option>
+          <option value="90">90 Days</option>
+          <option value="360">360 Days</option>
+        </select>
+      </div>
+
+      <div class="simple-container">
+        <span class="simple-info"
+          >Variation: <span id="variation-text">1.2</span></span
+        >
+        <span class="simple-info"
+          >% Variation: <span id="percent-variation-text">0.2</span></span
+        >
+        <span class="simple-info">Buy: <span id="buy-text">5.2</span></span>
+        <span class="simple-info">Sell: <span id="sell-text">5.32</span></span>
+        <span class="simple-info"
+          >Created in: <span id="created-text">11:23:13</span></span
+        >
+      </div>
+
+      <canvas id="myChart"></canvas>
+
+      <br />
+      <div class="footer-box">
+        <span class="footer-titles">Today</span>
+        <div class="sides-container">
+          <div class="text-holders">
+            <span
+              >Lowest:
+              <span id="low-today" class="low-high-values">4.1</span></span
+            >
+          </div>
+          <div class="text-holders">
+            <span
+              >Highest:
+              <span id="high-today" class="low-high-values">6.2</span></span
+            >
+          </div>
+        </div>
+
+        <span class="footer-titles">Period</span>
+        <div class="sides-container">
+          <div class="text-holders">
+            <span
+              >Lowest:
+              <span id="low-period" class="low-high-values">4.1</span></span
+            >
+          </div>
+          <div class="text-holders">
+            <span
+              >Highest:
+              <span id="high-period" class="low-high-values">6.2</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
