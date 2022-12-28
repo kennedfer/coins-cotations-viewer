@@ -57,7 +57,7 @@ function getArrayOfCurrencys(dataApi) {
 
 async function buildCurrenciesDropdown() {
   let reply = await fetch(
-    "data/currencies.json"
+    "https://kennedfer.github.io/coins-cotations-viewer/data/currencies.json"
   );
 
   let data = await reply.json();
